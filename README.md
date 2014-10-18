@@ -27,25 +27,25 @@ day.
 gco "My message"
 ```
 
-- git status
+- Seeing the status
 
 ```
 gsu
 ```
 
-- git push origin master
+- Pushing to master
 
 ```
 gpus master
 ```
 
-- git fetch
+- Fetching
 
 ```
 gfe
 ```
 
-- tig --all
+- `tig --all`
 
 ```
 tia
@@ -53,10 +53,9 @@ tia
 
 #### Colorized Git help messages
 
-I don't like typing git status (or even gsu) whenever I want to see if I have
+I don't like typing git status (or even my alias, gsu) whenever I want to see if I have
 changes. Instead, my prompt tells me if my environment is dirty, whether I have
-staged changes, or if I'm clean. It is all colorized with bright, in your face
-colors so that I can easily see where my last prompt was.
+staged changes, or if I'm clean. It is all colorizedso that I can easily see where my last prompt was.
 
 This is what it looks like:
 
@@ -69,9 +68,12 @@ This is what it looks like:
 Typing `cd ..` can be a pain. Instead, I have symlinked `..` to do the same
 thing. Adding more dots takes you up more levels.
 
-'''
+```
 alias ..='cd ..'
+
 alias ...='cd ../..'
+
 alias ....='cd ../../..'
+
 alias .....='cd ../../../..'
 ```
